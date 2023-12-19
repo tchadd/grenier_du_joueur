@@ -2,15 +2,30 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <title>{% block title %} {% endblock %}</title>
+        {% block initCss %}
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        {% endblock %}
         {% block stylesheets %}
         {% endblock %}
-
         {% block javascripts %}
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block header %}
+        {# include header #}
+        {% include 'partial/header.html.twig' %}
+        {% endblock %}
+
+        {% block content %}
+        {# code... #}
+        {% endblock %}
+
+        {% block footer %}
+        {# include footer #}
+        {% include 'partial/footer.html.twig' %}
+        {% endblock %}
     </body>
 </html>
