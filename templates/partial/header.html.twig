@@ -4,20 +4,25 @@
     </div>
     <div class="nav-links">
         <a href="{{path('app_home')}}" class="item">Accueil</a>
-        <a href="" class="item">Jeux</a>
-        <a href="" class="item">Consoles</a>
-        <a href="" class="item">Statistiques</a>
+        <a href="{{path('app_jeux')}}" class="item">Jeux</a>
+        <a href="{{path('app_consoles')}}" class="item">Consoles</a>
+        <a href="{{path('app_statistiques')}}" class="item">Statistiques</a>
     </div>
 
     <div class="btns">
+    {% if app.user is null %}
         <div class="btn">
-            <a href="" class="item">Connexion</a>
+            <a href="{{path('app_login')}}" class="item">Connexion</a>
         </div>
         <div class="btn">
-            <a href="" class="item">Inscription</a>   
+            <a href="{{path('app_register')}}" class="item">Inscription</a>   
         </div>
+    {% endif %}
+    
+    {% if app.user %}
          <div class="btn">
-            <a href="" class="item">Deconnexion</a>   
+            <a href="{{path('app_logout')}}" class="item">Deconnexion</a>   
         </div>
+    {% endif %}
     </div>
 </nav>

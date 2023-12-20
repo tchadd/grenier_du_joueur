@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="assets/css/register.css">
+{% endblock %}
+{% block content %}
+<div class="container-register">
+    <h1 align="center">S'inscrire </h1>
+    {{ form_errors(registrationForm) }}
+    {{ form_start(registrationForm) }}
+    <div class="info">
+        <fieldset>
+        <legend>Identité</legend>
+        {{ form_row(registrationForm.nom) }}
+        {{ form_row(registrationForm.prenom) }}
+        {{ form_row(registrationForm.code_postale) }}
+        {{ form_row(registrationForm.ville) }}
+        {{ form_row(registrationForm.adresse) }}
+    </fieldset>
+    </div>
+    <br>
+    <div class="auth">
+        <fieldset>
+            <legend>Authentificateurs</legend>
+        {{ form_row(registrationForm.email, {
+            label: 'Mail : '
+        }) }}
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Mot de passe : '
+        }) }}
+    <br>
+        {{ form_row(registrationForm.RGPDConsent) }}
+
+    <label class="rgpd-label">
+        En m'inscrivant, je confirme que j'accepte les conditions relatives au traitement de mes données personnelles conformément aux dispositions du Règlement général sur la protection des données. 
+    
+    </label>
+    </fieldset>
+    <br>
+    <div align="center">
+        <button type="submit" class="btn item">S'inscrire</button>
+    {{ form_end(registrationForm) }}
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+body {
+    background: radial-gradient(circle at center, yellow 10%, orange 70%) ;
+    font-size: 1.4rem;
+}
+
+.container-register {
+    width: 450px;
+    margin: auto;
+}
+.rgpd-label {
+    font-size: .8rem;
+}

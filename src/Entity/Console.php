@@ -28,11 +28,11 @@ class Console
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?etat $fk_etat = null;
+    private ?Etat $fk_etat = null;
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?marque $fk_marque = null;
+    private ?Marque $fk_marque = null;
 
     public function getId(): ?int
     {

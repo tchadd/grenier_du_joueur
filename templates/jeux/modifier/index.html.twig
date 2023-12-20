@@ -1,0 +1,22 @@
+{% extends '/base.html.twig' %}
+
+{% block title %}Modifier Jeux{% endblock %}
+{% block stylesheets %}
+<link rel='stylesheet' href="assets/css/modifier_jeux.css">
+{% endblock %}
+{% block content %}
+{{form_start(jeuForm)}}
+    {{form_row(jeuForm.nom)}}
+    {{form_row(jeuForm.type)}}
+    {{form_row(jeuForm.image)}}
+    {{form_row(jeuForm.annee_sortie)}}
+    {{form_row(jeuForm.prix_revente)}}
+    {{form_row(jeuForm.fk_editeur)}}
+    {{form_row(jeuForm.fk_etat)}}
+<button type="submit" class="item btn">Modifier</button>
+
+
+{{form_end(jeuForm)}}
+
+
+{% endblock %}

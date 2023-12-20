@@ -1,0 +1,31 @@
+body {
+    background: radial-gradient(circle at center, yellow 10%, orange 70%) ;
+}
+
+.jeu {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: radial-gradient(circle at center, yellow 40%, orange 90%) ;
+    border: 1px solid black;
+
+}
+
+.jeux {
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    gap : 2rem;
+    flex-wrap: wrap;
+
+    
+}
+
+.btn-ajouter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}

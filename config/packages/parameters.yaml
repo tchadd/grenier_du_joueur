@@ -1,0 +1,3 @@
+# config/packages/parameters.yaml
+parameters:
+    dossier_images_jeux: '%kernel.project_dir%/public/image/jeux'

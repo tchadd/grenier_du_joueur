@@ -1,0 +1,37 @@
+body {
+    background: radial-gradient(circle at center, yellow 10%, orange 70%) ;
+}
+
+.connexion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.connexion {
+    width: 300px;
+    height: 400px;
+    background-color: #e8e9d3;
+    padding: 2rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+label, .submit {
+    text-align: center;
+}
+label {
+    font-size: 1.3rem;
+}
+h1 {
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

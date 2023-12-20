@@ -33,13 +33,13 @@ class Jeu
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?editeur $fk_editeur = null;
+    private ?Editeur $fk_editeur = null;
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?etat $fk_etat = null;
+    private ?Etat $fk_etat = null;
 
-    #[ORM\ManyToMany(targetEntity: console::class)]
+    #[ORM\ManyToMany(targetEntity: Console::class)]
     private Collection $piloter;
 
     public function __construct()

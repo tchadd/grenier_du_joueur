@@ -1,0 +1,28 @@
+body {
+    background: radial-gradient(circle at center, yellow 10%, orange 70%) ;
+
+}
+.titre h2{
+    font-family:'CC Running With Scissors';
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .titre img{
+    margin-left:50px;
+    width:40%;
+  }
+  
+  .acctexte p{
+    font-family:'lustra';
+    text-align:center;
+  }
+  
+  .acctexte h3{
+    font-family:'CC Running With Scissors';
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
